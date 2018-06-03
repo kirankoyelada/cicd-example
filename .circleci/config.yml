@@ -45,7 +45,7 @@ jobs:
       -deploy:
         jobs:
           - build-job
-          - deploy-job:
+          - build:
               requires:
                 - build-job
               filters:
