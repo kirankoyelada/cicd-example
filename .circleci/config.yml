@@ -39,7 +39,7 @@ jobs:
       - run: yarn ng build --prod
       - run: yarn ng test --single-run
 
-      -deploy:
+      - deploy:
         jobs:
           - build-job
           - deploy-job:
